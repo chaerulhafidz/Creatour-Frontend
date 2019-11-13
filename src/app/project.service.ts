@@ -4,6 +4,7 @@ import { Observable, of } from 'rxjs';
 
 import { environment } from '../environments/environment'
 
+@Injectable({ providedIn: 'root' })
 export class ProjectService {
   public API_URL:string = 'http://localhost:8888';
 

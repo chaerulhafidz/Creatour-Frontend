@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ProjectService } from '../project.service';
 import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-project-list',
   templateUrl: './project-list.component.html',
@@ -10,15 +11,18 @@ import { HttpClient } from '@angular/common/http';
 export class ProjectListComponent implements OnInit {
 
   // List of projects variable
-  // projects = {};
+  projects = {};
 
   constructor(
-    private http: HttpClient
+    private projectService: ProjectService
   ) {}
 
   ngOnInit() {
-    //this.projectService.getProjects()
-    //  .subscribe(pr);
+    this.projectService.getProjects()
+      .subscribe(projects => {
+        this.projects = projects.data;
+        console.log(this.projects);
+      });
   }
 
   getProjects(){
