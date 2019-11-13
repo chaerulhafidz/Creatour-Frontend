@@ -1,5 +1,11 @@
-<p >project-list works!</p>
-
-<div *ngFor="let project of projects">
-  <p>{{project.name}} || {{project.description}}</p>
+<div class="projects-container">
+  <mat-card class="project-card" *ngFor="let project of projects">
+    <mat-card-header>
+      <mat-card-subtitle>{{project.name}}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="project-image" mat-card-image src="assets/projects.jpg" alt="Project">
+    <mat-card-content>
+      <p>{{project.description}}</p>
+    </mat-card-content>
+  </mat-card>
 </div>

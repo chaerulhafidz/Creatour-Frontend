@@ -15,7 +15,6 @@ export class ProjectService {
   // Get all projects
   // GET /api/projects
   getProjects(): Observable<any>{
-    console.log(this.API_URL+'/api/projects');
     return this.http.get(this.API_URL+'/api/projects');
   }
 
