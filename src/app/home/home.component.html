@@ -1,12 +1,12 @@
 <div class="home-container">
   <mat-grid-list cols="1" rowHeight="300px">
     <mat-grid-tile>
-      <h5>CreatOur?</h5>
+      <mat-grid-tile-header><h5>CreatOur?</h5></mat-grid-tile-header>
       <p>Aplikasi CreatOur adalah platform website dimana pengguna dapat berkolaborasi padasebuah proyek. Aplikasi ini memungkinan pengguna yang berkolaborasi pada sebuah proyekmendapatkan uang dari keuntungan yang didapat proyek berdasarkan kontribusi mereka. AplikasiCreatOur dapat memudahkan pemimpin proyek melakukan manajemen proyek mereka. Pemimpin proyek (creator) dapat menentukan posisi-posisi yang dibutuhkan serta melakukan review terhadap hasil dari contributor</p>
     </mat-grid-tile>
     <mat-divider></mat-divider>
     <mat-grid-tile>
-      <h5>Recent Projects</h5>
+      <mat-grid-tile-header><h5>Recent Projects</h5></mat-grid-tile-header>
       <mat-card class="project-card" *ngFor="let project of recentProjects">
         <mat-card-header>
           <mat-card-subtitle>{{project.name}}</mat-card-subtitle>
