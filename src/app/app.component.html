@@ -1,10 +1,16 @@
-<mat-toolbar color="primary">
-    <span>CreatOur</span>
-    <button routerLink="/" mat-button>Home</button>
-    <button routerLink="/projects" mat-button>Projects</button>
-    <button mat-button>About Us</button>
-    <span class="space"></span>
-    <button routerLink="/login" mat-button>Login</button>
-    <button mat-button>Register</button>
+<mat-toolbar color="primary" class="position-fixed" style="position: fixed; z-index: 1000">
+  <span>CreatOur</span>
+  <button routerLink="/" mat-button>Home</button>
+  <button routerLink="/projects" mat-button>Projects</button>
+  <button mat-button>About Us</button>
+  <span class="space"></span>
+  <button routerLink="/login" mat-button>Login</button>
+  <button *ngIf="currentUser"><a class="nav-item nav-link" (click)="logout()">Logout</a></button>
+  <button mat-button>Register</button>
 </mat-toolbar>
+
 <router-outlet></router-outlet>
+
+<script>
+
+</script>

@@ -1,22 +1,104 @@
-<div class="home-container">
-  <mat-grid-list cols="1" rowHeight="300px">
-    <mat-grid-tile>
-      <mat-grid-tile-header><h5>CreatOur?</h5></mat-grid-tile-header>
-      <p>Aplikasi CreatOur adalah platform website dimana pengguna dapat berkolaborasi padasebuah proyek. Aplikasi ini memungkinan pengguna yang berkolaborasi pada sebuah proyekmendapatkan uang dari keuntungan yang didapat proyek berdasarkan kontribusi mereka. AplikasiCreatOur dapat memudahkan pemimpin proyek melakukan manajemen proyek mereka. Pemimpin proyek (creator) dapat menentukan posisi-posisi yang dibutuhkan serta melakukan review terhadap hasil dari contributor</p>
-    </mat-grid-tile>
-    <mat-divider></mat-divider>
-    <mat-grid-tile>
-      <mat-grid-tile-header><h5>Recent Projects</h5></mat-grid-tile-header>
-      <mat-card class="project-card" *ngFor="let project of recentProjects">
-        <mat-card-header>
-          <mat-card-subtitle>{{project.name}}</mat-card-subtitle>
-        </mat-card-header>
-        <img class="project-image" mat-card-image src="assets/projects.jpg" alt="Project">
-        <mat-card-content>
-          <p>{{project.description}}</p>
-          <!-- <p>Ini adalah deskripsi singkat project sementara</p> -->
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+<div class="scrolls">
+  <div class="up"><span>↑</span>
+    <div class="center"><span>mouse <br> scrolling</span></div>
+  </div>
+  <div class="down"><span>↓</span></div>
 </div>
+<div class="smooth">
+  <div class="header" id="myHeader">
+    <ul>
+      <li><a href="#home">CreatOur</a></li>
+      <li><a href="#about">Contributor</a></li>
+      <li><a href="#price">Creator</a></li>
+    </ul>
+  </div>
+  <section id="home">
+    <h2>CreatOur</h2>
+    <p>
+      Platform berbasis website yang
+      memungkinkan Anda untuk saling
+      <b>berkolaborasi</b> dalam sebuah proyek.
+    </p>
+  </section>
+  <section id="about">
+    <h2>Contributor</h2>
+    <p>
+      Anda dapat bergabung dalam sebuah proyek
+      dan menjadi <b>Contributor</b>. Anda dapat
+      memilih bagian yang akan Anda jalani dan
+      berkontribusi pada proyek.
+    </p>
+    <p>
+      Anda dapat <b>menghasilkan uang</b> dari hasil
+      keuntungan proyek. Keuntungan Anda didapatkan
+      berdasarkan kontribusi Anda.
+    </p>
+  </section>
+  <section id="price">
+    <h2>Creator</h2>
+    <p>
+      Anda dapat membuat proyek dan memimpinnya
+      sebagai <b>Creator</b>. Anda dapat dengan mudah
+      memanajemen proyek Anda dan juga anggota Anda.
+    </p>
+    <p>
+      Anda sebagai Creator dapat menentukan posisi-posisi
+      yang dibutuhkan dalam proyek Anda serta melakukan review
+      terhadap hasil kerja dari anggota Anda.
+    </p>
+  </section>
+</div>
+
+<h1>Project Terbaru</h1>
+
+<div class="dashboard" style="display: flex; justify-content: center;">
+
+  <div class="container-dashboard" *ngFor="let project of recentProjects">
+    <div class="gambar">
+      <img src="assets/projects.jpg" alt="Paris">
+    </div>
+    <div class="container-tengah">
+      <div class="judul">
+        <h4>{{project.name}}</h4>
+      </div>
+      <div class="container-tengah-location">
+        <i class="fa fa-map-pin" style="font-size:20px;color:#a0a0a0;"></i>
+        <h5>{{project.description}}</h5>
+      </div>
+      <div class="attendance">
+        <div class="attendance-left">
+          <h3 class="jumlah_peserta">0</h3>
+          <h5 class="judul_peserta">Jumlah Peserta</h5>
+        </div>
+        <div class="attendance-right">
+          <h3 class="jumlah_peserta">6</h3>
+          <h5 class="judul_peserta">Task Pekerjaan</h5>
+        </div>
+      </div>
+    </div>
+    <div class="details">
+      <a class="button button2">View Details</a>
+    </div>
+  </div>
+</div>
+
+<!--<div class="home-container">-->
+<!--  <mat-grid-list cols="1" rowHeight="300px">-->
+<!--    <mat-grid-tile>-->
+<!--      <mat-grid-tile-header><h5>Recent Projects</h5></mat-grid-tile-header>-->
+<!--      <mat-card class="project-card" *ngFor="let project of recentProjects">-->
+<!--        <mat-card-header>-->
+<!--          <mat-card-subtitle>{{project.name}}</mat-card-subtitle>-->
+<!--        </mat-card-header>-->
+<!--        <img class="project-image" mat-card-image src="assets/projects.jpg" alt="Project">-->
+<!--        <mat-card-content>-->
+<!--          <p>{{project.description}}</p>-->
+<!--          &lt;!&ndash; <p>Ini adalah deskripsi singkat project sementara</p> &ndash;&gt;-->
+<!--        </mat-card-content>-->
+<!--      </mat-card>-->
+<!--    </mat-grid-tile>-->
+<!--  </mat-grid-list>-->
+<!--</div>-->
+
+
+

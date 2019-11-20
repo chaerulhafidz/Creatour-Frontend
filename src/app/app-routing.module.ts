@@ -7,9 +7,10 @@ import {ProjectListComponent} from './project-list/project-list.component';
 import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent}, 
-  { path: 'login', component: LoginComponent },
-  { path: 'projects', component: ProjectListComponent}
+  {path: '', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'projects', component: ProjectListComponent},
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
