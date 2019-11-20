@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ProjectService } from '../project.service';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-project-list',
@@ -11,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class ProjectListComponent implements OnInit {
 
   // List of projects variable
-  projects = {};
+  projects: any=[];
 
   constructor(
     private projectService: ProjectService
@@ -23,10 +22,6 @@ export class ProjectListComponent implements OnInit {
         this.projects = projects.data;
         console.log(this.projects);
       });
-  }
-
-  getProjects(){
-
   }
 
 }

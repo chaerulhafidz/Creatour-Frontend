@@ -6,11 +6,7 @@
   <span class="space"></span>
   <button routerLink="/login" mat-button>Login</button>
   <button *ngIf="currentUser"><a class="nav-item nav-link" (click)="logout()">Logout</a></button>
-  <button mat-button>Register</button>
+  <button routerLink="/register" mat-button>Register</button>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
-
-<script>
-
-</script>

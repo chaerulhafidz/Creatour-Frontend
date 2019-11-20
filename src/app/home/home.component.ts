@@ -9,7 +9,7 @@ import { ProjectService } from '../project.service';
 })
 export class HomeComponent implements OnInit {
 
-  recentProjects = {};
+  recentProjects: any=[];
 
   constructor(
     private projectService: ProjectService

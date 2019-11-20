@@ -34,13 +34,13 @@
           <h5 class="judul_peserta">Jumlah Peserta</h5>
         </div>
         <div class="attendance-right">
-          <h3 class="jumlah_peserta">6</h3>
+          <h3 class="jumlah_peserta">{{project.ProjectMembers.length}}</h3>
           <h5 class="judul_peserta">Task Pekerjaan</h5>
         </div>
       </div>
     </div>
     <div class="details">
-      <a class="button button2">View Details</a>
+      <a [routerLink]="['/project', project.id]" class="button button2">View Details</a>
     </div>
   </div>
 </div>

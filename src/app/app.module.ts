@@ -2,7 +2,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {ReactiveFormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
 import {LoginComponent} from './login/login.component';
@@ -28,7 +27,7 @@ import {MatDividerModule} from '@angular/material/divider';
     LoginComponent,
     ProjectListComponent,
     ProjectDetailComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
