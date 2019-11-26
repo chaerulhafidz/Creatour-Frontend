@@ -1,4 +1,100 @@
-<h1>FADIL</h1>
-<h1>{{project.name}}</h1>
-<h1>{{project.category}}</h1>
 <h1>{{project.description}}</h1>
+
+<h1>{{project.User.name}}</h1>
+
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <section id="slider"><a href="#"><img src="assets/cute.jpg" alt="" style="width: 960px; "></a></section>
+    <section id="shout">
+      <h1>{{project.name}}</h1>
+      <a>|</a>
+      <a *ngFor="let category of project.ProjectCategories">
+        {{category.category}} |
+      </a>
+
+    </section>
+    <!-- content body -->
+    <div id="content">
+      <!-- main content -->
+      <section>
+        <article>
+          <h2>Deskripsi Projek</h2>
+          <p>{{project.description}}</p>
+        </article>
+      </section>
+
+      <!--      <section id="services" class="last clear" *ngFor="let roles of project.ProjectRoles">-->
+      <!-- article 1 -->
+      <section id="shout">
+        <h2>Posisi yang diperlukan</h2>
+      </section>
+      <section id="services" class="last clear">
+        <article class="one_third">
+          <h2>Bocah</h2>
+          <img src="assets/bocah.png" alt="">
+          <p>電動ポケモン、ピカチュウがあります<br>
+            水ポケモン、リスがあります<br>
+            ポケモンファイアー、チャーマーダーがいる<br>
+            <br>
+            ポケモングラス、フシギダネがあります<br>
+            ポケモンポケモンどこであなたを探していますか、あなたを捕まえたいです<br>
+            ポケモンポケモンどこで私になりたいですか<br>
+            ポケモンポケモンどこであなたを探していますか、あなたを捕まえたいです<br>
+            ポケモンポケモンどこで私になりたいですか</p>
+          <footer class="more"><a href="https://pbs.twimg.com/media/DgPSG_zXcAAX1_Z.jpg">Belum Terisi</a></footer>
+        </article>
+        <!-- article 2 -->
+        <article class="one_third lastbox">
+          <h2>Pokemon</h2>
+          <img src="assets/muka.png" alt="">
+          <p>ada pokemon listrik, pikachu<br>
+            ada pokemon air, squirtle<br>
+            ada pokemon api, charmender<br>
+            <br>
+            ada pokemon rumput, bulbasur<br>
+            pokemon pokemon dimana kamu ku mencari mu, ingin menangkapmu<br>
+            pokemon pokemon dimana kamu ku mau kamu jadi milikku<br>
+            pokemon pokemon dimana kamu ku mencari mu, ingin menangkapmu<br>
+            pokemon pokemon dimana kamu ku mau kamu jadi milikku</p>
+          <footer class="more"><a href="https://pbs.twimg.com/media/DgPSG_zXcAAX1_Z.jpg">Imari Imari</a></footer>
+        </article>
+      </section>
+    </div>
+    <!-- right column -->
+    <aside id="right_column">
+      <h2 class="title">Kontak Projek</h2>
+      <nav>
+        <ul>
+          <li>
+            Discord
+            <a href="https://pbs.twimg.com/media/DgPSG_zXcAAX1_Z.jpg">Link</a>
+          </li>
+          <li>
+            Github
+            <a href="https://pbs.twimg.com/media/DgPSG_zXcAAX1_Z.jpg">Link</a>
+          </li>
+          <li>
+            Slack
+            <a href="https://pbs.twimg.com/media/DgPSG_zXcAAX1_Z.jpg">Link</a>
+          </li>
+          <li>
+            Trello
+            <a href="https://pbs.twimg.com/media/DgPSG_zXcAAX1_Z.jpg">Link</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /nav -->
+      <h2 class="title">Pemilik Projek</h2>
+      <section class="last">
+        <address>
+          {{project.User.name}}<br>
+          Tel: 082132180321<br>
+          Email: <a href="https://pbs.twimg.com/media/DgPSG_zXcAAX1_Z.jpg">Babarafi@gmail.com</a>
+        </address>
+      </section>
+      <!-- /section -->
+    </aside>
+    <!-- / content body -->
+  </div>
+</div>
+
